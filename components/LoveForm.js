@@ -40,7 +40,12 @@ function LoveForm() {
 
   return (
     <>
-      <Image src={message} alt="hand love" className="w-40 rotate-12 mx-auto" />
+      <Image
+        src={message}
+        alt="hand love"
+        className="w-40 rotate-12 mx-auto"
+        priority
+      />
       <section className="mt-8">
         <div className="flex flex-col items-center leading-[5rem] text-center">
           <div className="font-monofett text-4xl lg:text-[60px] whitespace-nowrap">
@@ -75,6 +80,7 @@ function LoveForm() {
                 ? 'opacity-100 cursor-pointer'
                 : 'opacity-25'
             }`}
+            priority
           />
         </div>
       </section>

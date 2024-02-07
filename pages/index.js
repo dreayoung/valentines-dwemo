@@ -39,6 +39,7 @@ export default function Home() {
           src={heart}
           alt="hand love"
           className="w-44 lg:w-52 mx-auto mb-10"
+          priority
         />
         <div className="flex flex-col items-center text-center lg:leading-[5rem]">
           <div className="font-monofett text-5xl lg:text-[60px] whitespace-nowrap">
@@ -51,6 +52,7 @@ export default function Home() {
             src={hotairballoon}
             alt="hot air balloon"
             className="w-[30rem] -rotate-12"
+            priority
           />
           <div className="text-7xl lg:text-8xl">
             <div className="">You?</div>

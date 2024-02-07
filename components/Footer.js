@@ -9,6 +9,7 @@ function Footer() {
         src={mail}
         alt="hand love"
         className="w-28 absolute -translate-x-1/2 left-1/2 -top-28 lg:-top-20"
+        priority
       />
       <div className="flex flex-col items-center leading-[5rem]">
         <div className="font-monofett text-3xl lg:text-[60px]">dwemo</div>
