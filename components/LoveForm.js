@@ -31,10 +31,11 @@ function LoveForm() {
   const [error, setError] = useState('');
 
   const loversOrFriends = useCallback(() => {
-    if (!name && !crushName) {
+    if (name.length <= 3 || crushName.length <= 3) {
       setError('names must be entered');
     } else {
       calculateNamePercentage(name, crushName);
+      setError('');
     }
   }, [name, crushName]);
 

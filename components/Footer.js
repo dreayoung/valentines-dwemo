@@ -4,7 +4,7 @@ import mail from '../public/images/mail.png';
 
 function Footer() {
   return (
-    <section className="mt-40 text-[#FF88C5] rounded-t-full lg:w-[80vw] mx-auto backdrop-blur-sm bg-slate-50/40 lg:h-96 relative p-12 lg:p-24">
+    <section className="mt-40 text-[#FF88C5] rounded-t-full lg:w-[80vw] mx-auto backdrop-blur-sm bg-slate-50/40 lg:h-96 relative p-12 lg:p-40">
       <Image
         src={mail}
         alt="hand love"

@@ -36,11 +36,11 @@ export default function Home() {
           className="w-44 lg:w-96 absolute left-8 -top-6 -rotate-45 opacity-10"
         />
         <Image
-          src="/images/heart_lock.png"
-          width={400}
-          height={400}
+          src="https://res.cloudinary.com/dvqdznlqo/image/upload/v1707289055/heart_lock_t4zcm0.png"
+          width={200}
+          height={200}
           alt="hand love"
-          className="w-44 lg:w-52 mx-auto mb-10"
+          className="w-40 lg:w-52 mx-auto mb-10"
           priority
         />
         <div className="flex flex-col items-center text-center lg:leading-[5rem]">
