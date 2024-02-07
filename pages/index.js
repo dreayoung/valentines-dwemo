@@ -36,7 +36,7 @@ export default function Home() {
           className="w-44 lg:w-96 absolute left-8 -top-6 -rotate-45 opacity-10"
         />
         <Image
-          src="/public/images/heart_lock.png"
+          src="/images/heart_lock.png"
           width={400}
           height={400}
           alt="hand love"
