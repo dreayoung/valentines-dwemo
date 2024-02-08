@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { Lilita_One, Monofett } from 'next/font/google';
 
 import handLove from '../public/images/hand_with_love.png';
-import heart from '../public/images/heartlock.png';
+import heart from '../public/images/hearlock1.svg';
 import loveHeart from '../public/images/loveeee.svg';
 import hotairballoon from '../public/images/air_balloon_with_clouds.png';
 
@@ -40,7 +40,7 @@ export default function Home() {
           width={250}
           height={250}
           alt="hand love"
-          className="w-40 lg:w-52 mx-auto mb-10"
+          className="w-36 lg:w-44 mx-auto mb-10"
           priority
         />
         <div className="flex flex-col items-center text-center lg:leading-[5rem]">
