@@ -11,9 +11,9 @@ function Footer() {
         className="w-28 absolute -translate-x-1/2 left-1/2 -top-28 lg:-top-20"
         priority
       />
-      <div className="flex flex-col items-center leading-[5rem]">
+      <div className="flex flex-col items-center">
         <div className="font-monofett text-3xl lg:text-[60px]">dwemo</div>
-        <div className="text-4xl lg:text-[120px]">createdbydwe</div>
+        <div className="text-4xl lg:text-[100px] lg:pt-10">createdbydwe</div>
       </div>
     </section>
   );

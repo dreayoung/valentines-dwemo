@@ -5,21 +5,21 @@ import twoHearts from '../public/images/two_hearts.png';
 import message from '../public/images/message(front).png';
 
 function calculateNamePercentage(name1, name2) {
-  // Convert names to lowercase for case insensitivity
+ 
   name1 = name1.toLowerCase();
   name2 = name2.toLowerCase();
 
-  // Count the number of common letters
+ 
   let commonLetters = 0;
   for (let i = 0; i < name1.length; i++) {
     if (name2.includes(name1[i])) {
       commonLetters++;
-      // Avoid counting the same letter multiple times
+   
       name2 = name2.replace(name1[i], '');
     }
   }
 
-  // Calculate the percentage
+
   const percentage =
     (commonLetters / Math.max(name1.length, name2.length)) * 100;
   console.log('Percentage', percentage.toFixed(2));
@@ -29,6 +29,8 @@ function LoveForm() {
   const [name, setName] = useState('');
   const [crushName, setCrushName] = useState('');
   const [error, setError] = useState('');
+
+  const [results, setResults] = useState("  `1");
 
   const loversOrFriends = useCallback(() => {
     if (name.length <= 3 || crushName.length <= 3) {
