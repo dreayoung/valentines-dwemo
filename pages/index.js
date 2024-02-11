@@ -2,10 +2,10 @@ import { useState, useCallback } from 'react';
 import Image from 'next/image';
 import { Lilita_One, Monofett } from 'next/font/google';
 
-import handLove from '/images/hand_with_love.png';
-import heart from '/images/hearlock1.svg';
-import loveHeart from '/images/loveeee.svg';
-import hotairballoon from '/images/airb.png';
+import handLove from '../public/images/hand_with_love.png';
+import heart from '../public/images/heartlock.png';
+import loveHeart from '../public/images/loveeee.svg';
+import hotairballoon from '../public/images/airb.png';
 
 import Footer from '@/components/Footer';
 import LoveForm from '@/components/LoveForm';
