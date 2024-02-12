@@ -64,7 +64,7 @@ function Results({
             <div
               className={`${lilita.className} ${monoFett.variable} text-2xl flex flex-col items-center justify-center text-center py-14 px-4 gap-8 capitalize text-[#ff88c5]`}
             >
-              <div className="flex items-center justify-center gap-2">
+              <div className="flex items-center justify-center gap-2 capitalize">
                 {name}
                 <Image
                   src={twoHearts}
