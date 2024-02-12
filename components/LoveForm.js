@@ -1,45 +1,62 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import Image from 'next/image';
 
 import twoHearts from '../public/images/two_hearts.png';
 import message from '../public/images/message(front).png';
 
-function calculateNamePercentage(name1, name2) {
- 
-  name1 = name1.toLowerCase();
-  name2 = name2.toLowerCase();
-
- 
-  let commonLetters = 0;
-  for (let i = 0; i < name1.length; i++) {
-    if (name2.includes(name1[i])) {
-      commonLetters++;
-   
-      name2 = name2.replace(name1[i], '');
-    }
-  }
-
-
-  const percentage =
-    (commonLetters / Math.max(name1.length, name2.length)) * 100;
-  console.log('Percentage', percentage.toFixed(2));
-}
+import Results from './Results';
 
 function LoveForm() {
   const [name, setName] = useState('');
   const [crushName, setCrushName] = useState('');
   const [error, setError] = useState('');
 
-  const [results, setResults] = useState("  `1");
+  const [openResults, setOpenResults] = useState(false);
+
+  const [results, setResults] = useState('');
+  const [seconds, setSeconds] = useState(false);
+
+  function countDown() {
+    setTimeout(() => {
+      setSeconds(true);
+    }, 5000);
+    // const interval = setInterval(() => {
+    //   setSeconds((seconds) => seconds - 1);
+    // }, 1000);
+
+    // return () => clearInterval(interval);
+  }
 
   const loversOrFriends = useCallback(() => {
-    if (name.length <= 3 || crushName.length <= 3) {
+    if (name.length <= 1 || crushName.length <= 1) {
       setError('names must be entered');
     } else {
       calculateNamePercentage(name, crushName);
       setError('');
+      setOpenResults(true);
+      countDown();
     }
   }, [name, crushName]);
+
+  function calculateNamePercentage(name1, name2) {
+    name1 = name1.toLowerCase();
+    name2 = name2.toLowerCase();
+
+    let commonLetters = 0;
+    for (let i = 0; i < name1.length; i++) {
+      if (name2.includes(name1[i])) {
+        commonLetters++;
+
+        name2 = name2.replace(name1[i], '');
+      }
+    }
+
+    const percentage =
+      (commonLetters / Math.max(name1.length, name2.length)) * 100;
+    setResults(percentage.toFixed(0));
+  }
+
+  // console.log(seconds);
 
   return (
     <>
@@ -74,6 +91,7 @@ function LoveForm() {
             className="rounded-3xl placeholder:text-center placeholder-white p-8 bg-transparent border border-white focus:outline-zinc-100"
           />
           {error && <p className="text-red-600 text-sm">{error}</p>}
+
           <Image
             src={twoHearts}
             alt="two hearts"
@@ -84,6 +102,17 @@ function LoveForm() {
                 : 'opacity-25'
             }`}
             priority
+          />
+          <Results
+            seconds={seconds}
+            setSeconds={setSeconds}
+            openResults={openResults}
+            setOpenResults={setOpenResults}
+            name={name}
+            setName={setName}
+            setCrushName={setCrushName}
+            crushName={crushName}
+            results={results}
           />
         </div>
       </section>
