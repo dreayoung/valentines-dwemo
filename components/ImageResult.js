@@ -19,7 +19,7 @@ function ImageResult({ results }) {
         <div className="grid gap-4 place-items-center">
           <Image src={locks} className="w-40" alt="love meter" />
           <div className="pt-4 text-4xl">{results}%</div>
-          <div>Love is definitely in the air</div>
+          <div>Locked innnnnnn babyyyyy</div>
         </div>
       ) : results >= 60 ? (
         <div className="grid gap-4 place-items-center">
