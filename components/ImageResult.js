@@ -26,7 +26,7 @@ function ImageResult({ results }) {
         <div className="grid gap-4 place-items-center">
           <Image src={arrow} className="w-40" alt="love meter" />
           <div className="pt-4 text-4xl">{results}%</div>
-          <div>That&apos;s cute</div>
+          <div>That&apos;s cute, real cute</div>
         </div>
       ) : results >= 40 ? (
         <div className="grid gap-4 place-items-center">
@@ -39,7 +39,7 @@ function ImageResult({ results }) {
           <Image src={cards} className="w-40" alt="love meter" />
           <div className="pt-4 text-4xl">{results}%</div>
           <div>
-            Play your cards right, go back in your roster and choose a better
+            Play your cards right.. go back in your roster and choose a better
             option!
           </div>
         </div>
