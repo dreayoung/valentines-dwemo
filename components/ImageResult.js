@@ -4,6 +4,7 @@ import brokenheart from '../public/images/broken_heart.png';
 import ring from '../public/images/box_with_ring(angle).png';
 import coffee from '../public/images/coffee.png';
 import arrow from '../public/images/bow_with_arrow.png';
+import locks from '../public/images/two_locks.png';
 
 function ImageResult({ results }) {
   return (
@@ -14,13 +15,19 @@ function ImageResult({ results }) {
           <div className="pt-4 text-4xl">{results}%</div>
           <div>What you waiting for?</div>
         </div>
-      ) : results >= 70 ? (
+      ) : results >= 80 ? (
+        <div className="grid gap-4 place-items-center">
+          <Image src={locks} className="w-40" alt="love meter" />
+          <div className="pt-4 text-4xl">{results}%</div>
+          <div>Love is definitely in the air</div>
+        </div>
+      ) : results >= 60 ? (
         <div className="grid gap-4 place-items-center">
           <Image src={arrow} className="w-40" alt="love meter" />
           <div className="pt-4 text-4xl">{results}%</div>
           <div>Thats cute</div>
         </div>
-      ) : results >= 50 ? (
+      ) : results >= 30 ? (
         <div className="grid gap-4 place-items-center">
           <Image src={coffee} className="w-40" alt="love meter" />
           <div className="pt-4 text-4xl">{results}%</div>
