@@ -25,7 +25,7 @@ export default function SoundPlay() {
   return (
     <div
       onClick={togglePlay}
-      className="flex items-center justify-center text-lg backdrop-blur-sm bg-slate-50/40 text-center rounded-full p-4 fixed z-50 top-2 right-6 cursor-pointer"
+      className="flex items-center justify-center text-lg backdrop-blur-sm bg-slate-50/40 text-center rounded-full p-4 fixed z-50 top-4 right-8 md:right-6 cursor-pointer"
     >
       {!isPlaying ? <FaPlay /> : <FaPause />}
     </div>

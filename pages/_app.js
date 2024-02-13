@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }) {
         <link rel="icon" href="/smile.png" sizes="180x180" type="image/png" />
         <meta name="description" content="Love Meter - Createdbydwe" />
       </Head>
-      <Component {...pageProps} />{' '}
+      <Component {...pageProps} />
     </>
   );
 }

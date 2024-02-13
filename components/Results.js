@@ -48,14 +48,6 @@ function Results({
     setSeconds(false);
   }
 
-  // if (seconds === 0) {
-  //   clearInterval(
-  //     setInterval(() => {
-  //       setSeconds((seconds) => seconds - 1);
-  //     }, 1000)
-  //   );
-  // }
-
   return (
     <Dialog open={openResults}>
       <DialogContent>
@@ -66,11 +58,7 @@ function Results({
             >
               <div className="flex items-center justify-center gap-2 capitalize">
                 {name}
-                <Image
-                  src={twoHearts}
-                  alt="loading"
-                  className="w-8"
-                />
+                <Image src={twoHearts} alt="loading" className="w-8" />
                 {crushName}
               </div>
               {seconds ? (
@@ -92,9 +80,6 @@ function Results({
           <Button type="button" variant="ghost" onClick={resetForm}>
             Close
           </Button>
-          {/* <Button type="button" variant="outline">
-            Try Again
-          </Button> */}
         </DialogFooter>
       </DialogContent>
     </Dialog>

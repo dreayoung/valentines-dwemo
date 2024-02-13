@@ -5,7 +5,7 @@ import { Lilita_One, Monofett } from 'next/font/google';
 import handLove from '../public/images/hand_with_love.png';
 import heart from '../public/images/heartlock.png';
 import loveHeart from '../public/images/loveeee.svg';
-import hotairballoon from '../public/images/airb.png';
+import hotairballoon from '../public/images/hotair.png';
 
 import Footer from '@/components/Footer';
 import LoveForm from '@/components/LoveForm';
@@ -33,14 +33,19 @@ export default function Home() {
         <Image
           src={loveHeart}
           alt="love hearts"
-          className="w-44 lg:w-96 absolute left-8 -top-6 -rotate-45 opacity-10"
+          className="w-44 lg:w-96 fixed left-8 -top-6 -rotate-45 opacity-10"
+        />
+        <Image
+          src={loveHeart}
+          alt="love hearts"
+          className="w-44 lg:w-96 fixed -right-8 top-40 -rotate-45 opacity-10 -z-10"
         />
         <Image
           src={heart}
           width={250}
           height={250}
           alt="hand love"
-          className="w-36 lg:w-44 mx-auto mb-10"
+          className="w-32 lg:w-44 mx-auto mb-10"
           priority
         />
         <div className="flex flex-col items-center text-center lg:leading-[5rem]">
@@ -53,7 +58,7 @@ export default function Home() {
           <Image
             src={hotairballoon}
             alt="hot air balloon"
-            className="w-[30rem] -rotate-12"
+            className="w-full md:w-96 -rotate-12"
             priority
           />
           <div className="text-7xl lg:text-8xl">

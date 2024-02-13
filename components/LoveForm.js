@@ -56,14 +56,12 @@ function LoveForm() {
     setResults(percentage.toFixed(0));
   }
 
-  // console.log(seconds);
-
   return (
     <>
       <Image
         src={message}
         alt="hand love"
-        className="w-40 rotate-12 mx-auto"
+        className="w-28 md:w-40 rotate-12 mx-auto"
         priority
       />
       <section className="mt-8">
@@ -71,11 +69,15 @@ function LoveForm() {
           <div className="font-monofett text-4xl lg:text-[60px] whitespace-nowrap">
             not sure?
           </div>
-          <div className="text-7xl lg:text-[120px] w-[90vw]">
+          <div className="text-7xl lg:text-[120px] w-[90vw] pb-3">
             Take the love test
           </div>
+          <span className="text-xs font-mono">
+            enter you and your crush&apos;s name, then press the heart to know
+            if they are THE ONE for you! good luck.
+          </span>
         </div>
-        <div className="grid gap-4 place-items-center justify-center text-lg lg:text-2xl mt-10">
+        <div className="grid gap-4 place-items-center justify-center text-lg lg:text-2xl mt-6">
           <input
             type="text"
             placeholder="your name"
