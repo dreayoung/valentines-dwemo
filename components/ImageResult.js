@@ -24,7 +24,7 @@ function ImageResult({ results }) {
         <div className="grid gap-4 place-items-center">
           <Image src={coffee} className="w-40" alt="love meter" />
           <div className="pt-4 text-4xl">{results}%</div>
-          <div>Id take a sip on that</div>
+          <div>Ehhh, i&apos;d take a slow sip on that one..</div>
         </div>
       ) : (
         <div className="grid gap-4 place-items-center">
