@@ -14,8 +14,8 @@ function Footer() {
       />
       <div className="flex flex-col items-center">
         <div className="font-monofett text-3xl lg:text-[60px]">dwemo</div>
-        <Link href="https://createdbydwe.tech/" target="_blank">
-          <div className="text-4xl lg:text-[85px] lg:pt-10">createdbydwe</div>
+        <Link href="https://askdwe.xyz/" target="_blank">
+          <div className="text-3xl lg:text-[75px] lg:pt-10">askdwe studios</div>
         </Link>
       </div>
     </section>
